@@ -1,3 +1,10 @@
+# BUILD FOR POSTMAN USE
+- `npm run build`
+  - in dist/index add 'GLOBAL_LIB.MT940Parser=q'
+  - should look like this: `;q.parse.bind(q);GLOBAL_LIB.MT940Parser=q}();`
+- then go to https://www.freeformatter.com/javascript-escape.html#before-output and escape
+- add script to `const LIB_MT940_PARSER = ''`
+
 # Centrapay SWIFT Parser
 
 SWIFT bank statement parser for JavaScript (ES2015). Supports [MT 940 Customer

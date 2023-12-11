@@ -9,3 +9,4 @@ play.js
 coverage.lcov
 dist/
 /.idea/
+.parcel-cache

@@ -2,10 +2,14 @@
   "name": "@finlyncerp/swiftmessageparser",
   "version": "1.2.1",
   "description": "Swift financial message parser (MT940, MT942)",
-  "main": "index.js",
+  "source": "index.js",
   "public": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "default": {}
   },
   "bin": {
     "swift-parse": "scripts/cli.js"
@@ -13,6 +17,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
+    "build": "parcel build --no-source-maps --no-cache index.js",
     "docs": "jsdoc -c jsdoc.json"
   },
   "keywords": [
@@ -28,10 +33,13 @@
     "eslint": "^7.28.0",
     "eslint-plugin-no-only-tests": "^2.6.0",
     "jest": "^27.0.4",
-    "jsdoc": "^3.6.7"
+    "jsdoc": "^3.6.7",
+    "parcel": "^2.10.3"
   },
   "dependencies": {
     "bignumber.js": "^9.0.1",
-    "moment": "^2.29.1"
+    "i": "^0.3.7",
+    "moment": "^2.29.1",
+    "npm": "^10.2.5"
   }
 }
