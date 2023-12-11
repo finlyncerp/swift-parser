@@ -1,8 +1,12 @@
 {
-  "name": "swiftmessageparser",
+  "name": "@finlyncerp/swiftmessageparser",
   "version": "1.2.1",
   "description": "Swift financial message parser (MT940, MT942)",
   "main": "index.js",
+  "public": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bin": {
     "swift-parse": "scripts/cli.js"
   },
@@ -19,10 +23,7 @@
     "statement",
     "parser"
   ],
-  "author": "Alexander Tsybulsky",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/sidtagirisa/swift-parser",
-  "repository": "https://github.com/sidtagirisa/swift-parser.git",
   "devDependencies": {
     "eslint": "^7.28.0",
     "eslint-plugin-no-only-tests": "^2.6.0",
